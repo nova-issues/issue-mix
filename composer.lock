@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98396b9e3890ab890aff8167d94b0c53",
+    "content-hash": "38ddbb6f85997153c906d9f66e8abde6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -241,6 +241,78 @@
                 "source": "https://github.com/cakephp/chronos"
             },
             "time": "2021-10-17T02:44:05+00:00"
+        },
+        {
+            "name": "demo/email-field",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/EmailField",
+                "reference": "46dd1330765ecc27b5b88b3be647d7e8d7224023"
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Demo\\EmailField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Demo\\EmailField\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "demo/tel-field",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/TelField",
+                "reference": "be02b3c54bab6808a7bbb610574bcfc97757390b"
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Demo\\TelField\\FieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Demo\\TelField\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova field.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "dflydev/dot-access-data",

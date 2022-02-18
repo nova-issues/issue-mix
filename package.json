@@ -7,7 +7,11 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+        "build-email-field": "cd nova-components/EmailField && npm run dev",
+        "build-email-field-prod": "cd nova-components/EmailField && npm run prod",
+        "build-tel-field": "cd nova-components/TelField && npm run dev",
+        "build-tel-field-prod": "cd nova-components/TelField && npm run prod"
     },
     "devDependencies": {
         "axios": "^0.25",

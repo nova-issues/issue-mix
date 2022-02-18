@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
@@ -12,7 +15,9 @@
         "laravel/nova": "*",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
-        "nova-kit/helpers": "^0.4.2"
+        "nova-kit/helpers": "^0.4.2",
+        "demo/email-field": "*",
+        "demo/tel-field": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -66,6 +71,14 @@
         "nova": {
             "type": "composer",
             "url": "https://nova.laravel.com"
+        },
+        "0": {
+            "type": "path",
+            "url": "./nova-components/EmailField"
+        },
+        "1": {
+            "type": "path",
+            "url": "./nova-components/TelField"
         }
     }
 }

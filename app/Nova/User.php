@@ -2,6 +2,8 @@
 
 namespace App\Nova;
 
+use Demo\EmailField\EmailField;
+use Demo\TelField\TelField;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\ID;
@@ -50,11 +52,13 @@ class User extends Resource
                 ->sortable()
                 ->rules('required', 'max:255'),
 
-            Text::make('Email')
+            EmailField::make('Email')
                 ->sortable()
                 ->rules('required', 'email', 'max:254')
                 ->creationRules('unique:users,email')
                 ->updateRules('unique:users,email,{{resourceId}}'),
+
+            TelField::make('Phone Number')->nullable(),
 
             Password::make('Password')
                 ->onlyOnForms()
